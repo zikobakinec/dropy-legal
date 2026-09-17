@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dropy.az — Qaydalar və Məxfilik</title>
+<meta name="description" content="Dropy.az müstəqil endirim aqreqatoru — Məxfilik Siyasəti və İstifadə Qaydaları" />
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #FBF7F0;
+    --card: #FFFFFF;
+    --border: #E7E1D5;
+    --fg: #14213D;
+    --muted: #6E7280;
+    --accent: #F2643D;
+    --accent-soft: #FBEAE4;
+    --secondary: #146B68;
+    --secondary-soft: #E7F2F1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14171F;
+      --card: #1C2029;
+      --border: #2B303B;
+      --fg: #F3F1EA;
+      --muted: #9AA0AE;
+      --accent: #F2794F;
+      --accent-soft: rgba(242, 100, 61, 0.16);
+      --secondary: #3FA39E;
+      --secondary-soft: rgba(20, 107, 104, 0.22);
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding-block: 40px;
+    padding-inline: max(16px, calc((100% - 720px) / 2));
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 680px; margin-inline: auto; }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand-mark {
+    width: 36px; height: 36px;
+    border-radius: 12px;
+    background: var(--accent);
+    transform: rotate(-3deg);
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-weight: 700; font-size: 16px;
+    flex-shrink: 0;
+  }
+  .brand-name { font-size: 19px; font-weight: 700; letter-spacing: -0.01em; }
+  .lang-toggle {
+    display: flex;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 12px;
+  }
+  .lang-toggle button {
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    padding: 7px 12px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: inherit;
+  }
+  .lang-toggle button.active {
+    background: var(--accent);
+    color: #fff;
+  }
+  h1 {
+    font-size: 26px;
+    letter-spacing: -0.015em;
+    margin: 0 0 6px;
+  }
+  .updated { color: var(--muted); font-size: 12px; margin: 0 0 28px; }
+  .statement {
+    background: var(--secondary-soft);
+    border: 1px solid color-mix(in srgb, var(--secondary) 30%, transparent);
+    border-radius: 18px;
+    padding: 18px 20px;
+    margin-bottom: 28px;
+  }
+  .statement h2 {
+    font-size: 14px;
+    color: var(--secondary);
+    margin: 0 0 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .statement p { margin: 0; font-size: 14px; color: var(--fg); opacity: 0.92; }
+  section { margin-bottom: 26px; }
+  section h2 {
+    font-size: 15px;
+    margin: 0 0 8px;
+    letter-spacing: -0.005em;
+  }
+  section p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--muted);
+  }
+  a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  a:hover { text-decoration: underline; }
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 18px;
+    margin-top: 32px;
+    text-align: center;
+    font-size: 11px;
+    color: var(--muted);
+  }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="brand-mark">D</div>
+        <div class="brand-name">Dropy.az</div>
+      </div>
+      <div class="lang-toggle">
+        <button type="button" data-lang="az" class="active" onclick="setLang('az')">AZ</button>
+        <button type="button" data-lang="en" onclick="setLang('en')">EN</button>
+      </div>
+    </header>
+
+    <div data-lang-content="az">
+      <h1>Qaydalar və Məxfilik</h1>
+      <p class="updated">Son yenilənmə tarixi: 30 Avqust 2026 • Versiya 0.2.0</p>
+
+      <div class="statement">
+        <h2>🛡️ Müstəqil Aqreqator Bəyanatı</h2>
+        <p><strong>Dropy.az</strong> tətbiqi müstəqil informasiya toplayıcısıdır. Tətbiqdə nümayiş olunan endirim və kampaniyalar ictimai açıq mənbələrdən, sosial media hesablarından və tərəfdaş kataloqlarından toplanır. Tətbiq birbaşa məhsul satışı ilə məşğul olmur.</p>
+      </div>
+
+      <section>
+        <h2>1. Şəxsi Məlumatların Qorunması (GDPR &amp; AR Qanunvericiliyi)</h2>
+        <p>Tətbiqdən istifadə üçün qeydiyyat məcburi deyil. Bildirişləri aktivləşdirmək, kampaniyaları yadda saxlamaq və ya mağazaları izləmək istədikdə e-poçt ünvanınızla, birdəfəlik təsdiq kodu ilə (şifrəsiz) daxil olursunuz. Hesabınıza bağlı yadda saxladığınız kampaniyalar, izlədiyiniz mağazalar və bildirişləriniz təhlükəsiz serverlərdə saxlanılır və heç bir üçüncü tərəfə satılmır və ya ötürülmür. İstədiyiniz zaman hesabınızı və bütün məlumatlarınızı tətbiq daxilindən həmişəlik silə bilərsiniz.</p>
+      </section>
+
+      <section>
+        <h2>2. Məkan İcazəsi</h2>
+        <p>Məkan koordinatlarınız yalnız sizə ən yaxın kampaniyaları göstərmək üçün, siz aktiv şəkildə tələb etdiyiniz zaman bir dəfəlik oxunur — tətbiq bağlı və ya arxa planda olarkən izlənmir və serverlərimizdə heç saxlanılmır.</p>
+      </section>
+
+      <section>
+        <h2>3. Reklam və Tərəfdaşlıq Linkləri</h2>
+        <p>Tətbiqdaxili sponsorlu reklamlar "Reklam / Sponsor" nişanı ilə, xarici tərəfdaşlıq keçidləri isə "Tərəfdaş" etiketi ilə aydın şəkildə qeyd olunur. Reklamlar Google AdMob vasitəsilə göstərilir; AdMob reklamların fərdiləşdirilməsi üçün cihaz reklam identifikatorundan istifadə edə bilər (bax: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Məxfilik Siyasəti</a>).</p>
+      </section>
+
+      <section>
+        <h2>4. Əlaqə və Hüquqi Məlumat</h2>
+        <p>Hər hansı sualınız, düzəliş və ya tərəfdaşlıq müraciətləri üçün: <a href="mailto:support@dropy.az">support@dropy.az</a></p>
+      </section>
+    </div>
+
+    <div data-lang-content="en" hidden>
+      <h1>Terms &amp; Privacy</h1>
+      <p class="updated">Last updated: August 30, 2026 • Version 0.2.0</p>
+
+      <div class="statement">
+        <h2>🛡️ Independent Aggregator Statement</h2>
+        <p><strong>Dropy.az</strong> is an independent information aggregator. Deals and campaigns shown in the app are collected from public sources, social media accounts, and partner catalogs. The app is not directly involved in selling products.</p>
+      </div>
+
+      <section>
+        <h2>1. Protection of Personal Data (GDPR &amp; AR Legislation)</h2>
+        <p>Registration is not required to use the app. When you want to enable notifications, save campaigns, or follow stores, you sign in with your email address using a one-time confirmation code (no password). Campaigns you save, stores you follow, and your notifications linked to your account are stored on secure servers and are never sold or shared with any third party. You can permanently delete your account and all your data from within the app at any time.</p>
+      </section>
+
+      <section>
+        <h2>2. Location Permission</h2>
+        <p>Your location coordinates are read only once, at the moment you actively request it, to show you the nearest campaigns — it is not tracked while the app is closed or in the background, and it is never stored on our servers.</p>
+      </section>
+
+      <section>
+        <h2>3. Ads and Partnership Links</h2>
+        <p>In-app sponsored ads are clearly marked with an "Ad / Sponsor" badge, and external partner links with a "Partner" label. Ads are served through Google AdMob; AdMob may use the device advertising identifier to personalize ads (see the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>).</p>
+      </section>
+
+      <section>
+        <h2>4. Contact &amp; Legal Information</h2>
+        <p>For any questions, corrections, or partnership requests: <a href="mailto:support@dropy.az">support@dropy.az</a></p>
+      </section>
+    </div>
+
+    <footer>© 2026 Dropy.az</footer>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll("[data-lang-content]").forEach(function (el) {
+        el.hidden = el.getAttribute("data-lang-content") !== lang;
+      });
+      document.querySelectorAll(".lang-toggle button").forEach(function (btn) {
+        btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
+      });
+      try { localStorage.setItem("dropy-legal-lang", lang); } catch (e) {}
+    }
+    (function () {
+      try {
+        var saved = localStorage.getItem("dropy-legal-lang");
+        if (saved === "en") setLang("en");
+      } catch (e) {}
+    })();
+  </script>
+</body>
+</html>
