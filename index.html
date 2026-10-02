@@ -5,134 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Dropy.az — Qaydalar və Məxfilik</title>
 <meta name="description" content="Dropy.az müstəqil endirim aqreqatoru — Məxfilik Siyasəti və İstifadə Qaydaları" />
-<style>
-  :root {
-    color-scheme: light dark;
-    --bg: #FBF7F0;
-    --card: #FFFFFF;
-    --border: #E7E1D5;
-    --fg: #14213D;
-    --muted: #6E7280;
-    --accent: #F2643D;
-    --accent-soft: #FBEAE4;
-    --secondary: #146B68;
-    --secondary-soft: #E7F2F1;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #14171F;
-      --card: #1C2029;
-      --border: #2B303B;
-      --fg: #F3F1EA;
-      --muted: #9AA0AE;
-      --accent: #F2794F;
-      --accent-soft: rgba(242, 100, 61, 0.16);
-      --secondary: #3FA39E;
-      --secondary-soft: rgba(20, 107, 104, 0.22);
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    padding-block: 40px;
-    padding-inline: max(16px, calc((100% - 720px) / 2));
-    background: var(--bg);
-    color: var(--fg);
-    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.6;
-  }
-  .wrap { max-width: 680px; margin-inline: auto; }
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    margin-bottom: 28px;
-  }
-  .brand { display: flex; align-items: center; gap: 10px; }
-  .brand-mark {
-    width: 36px; height: 36px;
-    border-radius: 12px;
-    background: var(--accent);
-    transform: rotate(-3deg);
-    display: flex; align-items: center; justify-content: center;
-    color: #fff; font-weight: 700; font-size: 16px;
-    flex-shrink: 0;
-  }
-  .brand-name { font-size: 19px; font-weight: 700; letter-spacing: -0.01em; }
-  .lang-toggle {
-    display: flex;
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    overflow: hidden;
-    font-size: 12px;
-  }
-  .lang-toggle button {
-    border: none;
-    background: transparent;
-    color: var(--muted);
-    padding: 7px 12px;
-    cursor: pointer;
-    font-weight: 600;
-    font-family: inherit;
-  }
-  .lang-toggle button.active {
-    background: var(--accent);
-    color: #fff;
-  }
-  h1 {
-    font-size: 26px;
-    letter-spacing: -0.015em;
-    margin: 0 0 6px;
-  }
-  .updated { color: var(--muted); font-size: 12px; margin: 0 0 28px; }
-  .statement {
-    background: var(--secondary-soft);
-    border: 1px solid color-mix(in srgb, var(--secondary) 30%, transparent);
-    border-radius: 18px;
-    padding: 18px 20px;
-    margin-bottom: 28px;
-  }
-  .statement h2 {
-    font-size: 14px;
-    color: var(--secondary);
-    margin: 0 0 8px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  .statement p { margin: 0; font-size: 14px; color: var(--fg); opacity: 0.92; }
-  section { margin-bottom: 26px; }
-  section h2 {
-    font-size: 15px;
-    margin: 0 0 8px;
-    letter-spacing: -0.005em;
-  }
-  section p {
-    margin: 0;
-    font-size: 14px;
-    color: var(--muted);
-  }
-  a { color: var(--accent); text-decoration: none; font-weight: 600; }
-  a:hover { text-decoration: underline; }
-  footer {
-    border-top: 1px solid var(--border);
-    padding-top: 18px;
-    margin-top: 32px;
-    text-align: center;
-    font-size: 11px;
-    color: var(--muted);
-  }
-  [hidden] { display: none !important; }
-</style>
+<link rel="stylesheet" href="/legal.css" />
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="brand">
+      <a class="brand" href="/">
         <div class="brand-mark">D</div>
         <div class="brand-name">Dropy.az</div>
-      </div>
+      </a>
       <div class="lang-toggle">
         <button type="button" data-lang="az" class="active" onclick="setLang('az')">AZ</button>
         <button type="button" data-lang="en" onclick="setLang('en')">EN</button>
@@ -141,83 +22,206 @@
 
     <div data-lang-content="az">
       <h1>Qaydalar və Məxfilik</h1>
-      <p class="updated">Son yenilənmə tarixi: 30 Avqust 2026 • Versiya 0.2.0</p>
+      <p class="updated">Son yenilənmə tarixi: 3 Oktyabr 2026 • Versiya 0.3.0</p>
 
       <div class="statement">
-        <h2>🛡️ Müstəqil Aqreqator Bəyanatı</h2>
-        <p><strong>Dropy.az</strong> tətbiqi müstəqil informasiya toplayıcısıdır. Tətbiqdə nümayiş olunan endirim və kampaniyalar ictimai açıq mənbələrdən, sosial media hesablarından və tərəfdaş kataloqlarından toplanır. Tətbiq birbaşa məhsul satışı ilə məşğul olmur.</p>
+        <h2>Müstəqil Aqreqator Bəyanatı</h2>
+        <p><strong>Dropy.az</strong> müstəqil informasiya toplayıcısıdır. Tətbiqdə göstərilən endirim və kampaniyalar mağazaların öz rəsmi saytlarından, ictimai sosial media səhifələrindən və satıcıların özlərinin əlavə etdiyi məlumatlardan toplanır. Tətbiq məhsul satmır, ödəniş qəbul etmir və göstərilən mağaza və brendlərlə rəsmi əlaqəsi olduğunu iddia etmir.</p>
       </div>
 
-      <section>
-        <h2>1. Şəxsi Məlumatların Qorunması (GDPR &amp; AR Qanunvericiliyi)</h2>
-        <p>Tətbiqdən istifadə üçün qeydiyyat məcburi deyil. Bildirişləri aktivləşdirmək, kampaniyaları yadda saxlamaq və ya mağazaları izləmək istədikdə e-poçt ünvanınızla, birdəfəlik təsdiq kodu ilə (şifrəsiz) daxil olursunuz. Hesabınıza bağlı yadda saxladığınız kampaniyalar, izlədiyiniz mağazalar və bildirişləriniz təhlükəsiz serverlərdə saxlanılır və heç bir üçüncü tərəfə satılmır və ya ötürülmür. İstədiyiniz zaman hesabınızı və bütün məlumatlarınızı tətbiq daxilindən həmişəlik silə bilərsiniz.</p>
+      <nav class="toc" aria-label="Məzmun">
+        <a href="#melumat">Topladığımız məlumat</a>
+        <a href="#istifade">İstifadə məqsədi</a>
+        <a href="#terefler">Xidmət təchizatçıları</a>
+        <a href="#yer">Məkan</a>
+        <a href="#reklam">Reklam</a>
+        <a href="#ai">Süni intellekt yoxlaması</a>
+        <a href="#silme">Silmə və hüquqlar</a>
+        <a href="#mezmun">Məzmun və müəllif hüquqları</a>
+        <a href="#elaqe">Əlaqə</a>
+      </nav>
+
+      <section id="operator">
+        <h2>Məlumat operatoru</h2>
+        <p>Dropy.az tətbiqini və bu saytı <strong>Omnigate MMC</strong> (Azərbaycan Respublikası) idarə edir. Məxfiliklə bağlı bütün müraciətlər üçün: <a href="mailto:support@dropy.az">support@dropy.az</a>.</p>
       </section>
 
-      <section>
-        <h2>2. Məkan İcazəsi</h2>
-        <p>Məkan koordinatlarınız yalnız sizə ən yaxın kampaniyaları göstərmək üçün, siz aktiv şəkildə tələb etdiyiniz zaman bir dəfəlik oxunur — tətbiq bağlı və ya arxa planda olarkən izlənmir və serverlərimizdə heç saxlanılmır.</p>
+      <section id="melumat">
+        <h2>1. Hansı məlumatı topluyuruq</h2>
+        <p>Tətbiqə baxmaq üçün hesab tələb olunmur. Aşağıdakı məlumat yalnız müvafiq funksiyadan istifadə etdikdə yaranır:</p>
+        <ul>
+          <li><strong>Hesab:</strong> daxil olduqda e-poçt ünvanınız (birdəfəlik kodla, şifrəsiz), istəsəniz adınız, şəhəriniz və profil şəkliniz.</li>
+          <li><strong>Seçimləriniz:</strong> yadda saxladığınız kampaniyalar, izlədiyiniz mağazalar, bildirişləriniz və bildiriş tənzimləmələriniz (ayrılmış kateqoriyalar, sakit saatlar).</li>
+          <li><strong>Bildirişlər:</strong> bildiriş icazəsi verdikdə cihazınızın push tokeni (Expo xidməti vasitəsilə çatdırılır).</li>
+          <li><strong>Şikayət və bloklama:</strong> kampaniyaya göndərdiyiniz şikayətin səbəbi və mətni. Bloklanmış mağazaların siyahısı yalnız cihazınızda saxlanılır.</li>
+          <li><strong>Satıcılar üçün:</strong> mağazanın adı, təsviri, əlaqə telefonu, vebsayt ünvanı, loqosu, kampaniya şəkilləri və mətnləri. İstəsəniz Instagram və ya Facebook səhifənizi bağlayırsınız (bax: bölmə 7).</li>
+          <li><strong>Axtarışlar:</strong> axtarış sözləri istifadəçi ilə əlaqələndirilmədən saxlanılır (məsələn, populyar axtarışları göstərmək üçün).</li>
+          <li><strong>Texniki məlumat və reklam:</strong> reklam identifikatoru, təxmini məkan (IP ünvanından), tətbiqdaxili qarşılıqlı əlaqə və diaqnostika — bunları Google AdMob reklam göstərmək üçün toplayır (bölmə 5). Xəta hesabatları (çökmə) üçün Sentry istifadə oluna bilər.</li>
+        </ul>
+        <p>Məlumatlarınızı satmırıq.</p>
       </section>
 
-      <section>
-        <h2>3. Reklam və Tərəfdaşlıq Linkləri</h2>
-        <p>Tətbiqdaxili sponsorlu reklamlar "Reklam / Sponsor" nişanı ilə, xarici tərəfdaşlıq keçidləri isə "Tərəfdaş" etiketi ilə aydın şəkildə qeyd olunur. Reklamlar Google AdMob vasitəsilə göstərilir; AdMob reklamların fərdiləşdirilməsi üçün cihaz reklam identifikatorundan istifadə edə bilər (bax: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Məxfilik Siyasəti</a>).</p>
+      <section id="istifade">
+        <h2>2. Məlumatdan nə üçün istifadə edirik</h2>
+        <p>Hesabı idarə etmək və daxil olmağı təmin etmək, yadda saxladıqlarınızı və izlədiklərinizi göstərmək, uyğun bildirişləri göndərmək, satıcı elanlarını yoxlayıb dərc etmək, sui-istifadənin qarşısını almaq, tətbiqin işləməsini yaxşılaşdırmaq və reklam göstərmək üçün.</p>
       </section>
 
-      <section>
-        <h2>4. Əlaqə və Hüquqi Məlumat</h2>
-        <p>Hər hansı sualınız, düzəliş və ya tərəfdaşlıq müraciətləri üçün: <a href="mailto:support@dropy.az">support@dropy.az</a></p>
+      <section id="terefler">
+        <h2>3. Xidmət təchizatçıları</h2>
+        <p>Məlumatlarınızın işlənməsi üçün aşağıdakı təchizatçılardan istifadə edirik:</p>
+        <ul>
+          <li><strong>Supabase</strong> — hesab, verilənlər bazası və fayl saxlama (şəkillər).</li>
+          <li><strong>Expo</strong> — push bildirişlərin çatdırılması.</li>
+          <li><strong>Google AdMob</strong> — reklamlar (bölmə 5).</li>
+          <li><strong>Anthropic</strong> — yüklədiyiniz şəkil və mətnlərin avtomatik yoxlanılması (bölmə 6).</li>
+          <li><strong>Sentry</strong> — çökmə və xəta hesabatları (aktiv olduqda).</li>
+          <li><strong>Meta (Instagram / Facebook)</strong> — yalnız satıcı öz hesabını bağladıqda (bölmə 7).</li>
+        </ul>
+      </section>
+
+      <section id="yer">
+        <h2>4. Məkan icazəsi</h2>
+        <p>Məkan icazəsi könüllüdür və yalnız tətbiq açıq olduqda istifadə olunur. Dəqiq koordinatlarınız yalnız kampaniyaları sizə olan məsafəyə görə düzmək üçün <strong>cihazınızda</strong> hesablanır, serverlərimizə göndərilmir və saxlanılmır. Arxa planda məkan izlənmir. Reklam təchizatçısı (AdMob) IP ünvanınızdan təxmini yer müəyyən edə bilər (bölmə 5).</p>
+      </section>
+
+      <section id="reklam">
+        <h2>5. Reklam</h2>
+        <p>Reklamlar Google AdMob vasitəsilə göstərilir. AdMob reklam identifikatorundan, təxmini məkandan, tətbiqdaxili qarşılıqlı əlaqədən və diaqnostika məlumatından reklamları göstərmək, fərdiləşdirmək və saxtakarlığın qarşısını almaq üçün istifadə edə bilər. Daha ətraflı: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Məxfilik Siyasəti</a>.</p>
+        <p>iOS cihazlarda izləmə üçün sizdən ayrıca icazə soruşulur; imtina etsəniz reklam identifikatoru istifadə olunmur. Android-də reklam identifikatorunu cihazın ayarlarından (Google → Reklamlar) sıfırlaya və ya fərdiləşdirməni söndürə bilərsiniz. Sponsorlu məzmun "Reklam / Sponsor" nişanı ilə qeyd olunur.</p>
+      </section>
+
+      <section id="ai">
+        <h2>6. Süni intellekt vasitəsilə yoxlama</h2>
+        <p>Satıcı və profil məzmununu uyğunsuz (çılpaqlıq, zorakılıq, nifrət və s.) materiallardan qorumaq üçün yüklədiyiniz <strong>şəkillər</strong> (profil şəkli, mağaza loqosu, kampaniya şəkli) və <strong>mətnlər</strong> (mağaza və kampaniya adı və təsviri) dərc olunmazdan əvvəl <strong>Anthropic</strong> şirkətinin süni intellekt xidmətinə göndərilir və yalnız yoxlama məqsədilə işlənir. Bunun üçün tətbiq ilk dəfə sizdən razılıq istəyir; razılıq verməsəniz heç nə göndərilmir və yükləmə həyata keçirilmir. Anthropic-in siyasəti: <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a>. Yoxlamadan keçən satıcı elanları əlavə olaraq əl ilə təsdiqlənir.</p>
+      </section>
+
+      <section id="meta">
+        <h2>7. Instagram və Facebook bağlantısı (satıcılar üçün)</h2>
+        <p>Satıcı istəsə, mağazasının Instagram və ya Facebook səhifəsini Meta-nın rəsmi giriş axını ilə bağlaya bilər. Bu zaman həmin səhifənin identifikatoru və giriş tokeni serverdə saxlanılır, mağazanın kampaniya paylaşımlarını oxumaq və onlardan elan layihəsi yaratmaq üçün istifadə olunur. Bu giriş Dropy.az-a daxil olma üsulu deyil. Bağlantı mağaza silindikdə silinir; həmçinin Meta hesabınızın ayarlarından tətbiqin icazəsini istənilən vaxt ləğv edə bilərsiniz.</p>
+      </section>
+
+      <section id="silme">
+        <h2>8. Məlumatların silinməsi və hüquqlarınız</h2>
+        <p>Hesabınızı tətbiq daxilindən <strong>Profil → Hesabı sil</strong> yolu ilə dərhal və həmişəlik silə bilərsiniz. Silinənlər: hesab, profil, yadda saxlananlar, izlədikləriniz, bildirişlər, push token, göndərdiyiniz şikayətlər; satıcılar üçün həmçinin mağaza, onun elanları, yüklədiyiniz şəkillər və Instagram/Facebook bağlantısı. Tətbiqə girişiniz yoxdursa, hesabın e-poçt ünvanından <a href="mailto:support@dropy.az">support@dropy.az</a> ünvanına yazın. Ətraflı: <a href="/hesabi-sil/">Hesabı silmə səhifəsi</a>.</p>
+        <p>Tətbiq olunan qanunvericiliyə uyğun olaraq məlumatınıza giriş, düzəliş, silmə və işlənməyə etiraz hüququnuz var. Müraciətlərə ən geci 30 gün ərzində cavab veririk.</p>
+        <p>Tətbiq 13 yaşdan kiçik uşaqlar üçün nəzərdə tutulmayıb və onlardan bilərəkdən məlumat toplamırıq.</p>
+      </section>
+
+      <section id="mezmun">
+        <h2>9. Məzmun, müəllif hüquqları və istifadə qaydaları</h2>
+        <p>Kampaniyalardakı mağaza adları, loqolar və məhsul şəkilləri müvafiq mağaza və brendlərin mülkiyyətidir və yalnız həmin kampaniyanı göstərmək üçün istifadə olunur; hər kampaniyada orijinal mənbəyə keçid var. Dropy.az bu brendlərin rəsmi tərəfdaşı deyil. Qiymət və şərtlər dəyişə bilər, alışdan əvvəl mağazanın özündə yoxlayın.</p>
+        <p>Hüquq sahibisinizsə və məzmunun silinməsini istəyirsinizsə, <a href="mailto:support@dropy.az">support@dropy.az</a> ünvanına kampaniyanı və hüququnuzu göstərməklə yazın; əsaslı müraciətlər tezliklə nəzərdən keçirilir.</p>
+        <p>İstifadəçilər uyğunsuz elanı kampaniya səhifəsindəki bayraq düyməsi ilə şikayət edə və həmin mağazanın elanlarını gizlədə bilər. Qayda pozuntusu olan elanları və hesabları silmək hüququmuzu saxlayırıq.</p>
+      </section>
+
+      <section id="elaqe">
+        <h2>10. Əlaqə və dəyişikliklər</h2>
+        <p>Suallar, düzəlişlər və müraciətlər: <a href="mailto:support@dropy.az">support@dropy.az</a>. Bu siyasət yenilənə bilər; əhəmiyyətli dəyişikliklər tətbiqdə və bu səhifədə, yuxarıdakı tarixlə birgə bildirilir.</p>
       </section>
     </div>
 
     <div data-lang-content="en" hidden>
       <h1>Terms &amp; Privacy</h1>
-      <p class="updated">Last updated: August 30, 2026 • Version 0.2.0</p>
+      <p class="updated">Last updated: October 3, 2026 • Version 0.3.0</p>
 
       <div class="statement">
-        <h2>🛡️ Independent Aggregator Statement</h2>
-        <p><strong>Dropy.az</strong> is an independent information aggregator. Deals and campaigns shown in the app are collected from public sources, social media accounts, and partner catalogs. The app is not directly involved in selling products.</p>
+        <h2>Independent Aggregator Statement</h2>
+        <p><strong>Dropy.az</strong> is an independent information aggregator. The deals and campaigns it shows are collected from stores' own official websites, public social media pages, and information that sellers add themselves. The app does not sell products, does not take payments, and does not claim any official affiliation with the stores and brands it shows.</p>
       </div>
 
+      <nav class="toc" aria-label="Contents">
+        <a href="#melumat-en">Data we collect</a>
+        <a href="#istifade-en">How we use it</a>
+        <a href="#terefler-en">Service providers</a>
+        <a href="#yer-en">Location</a>
+        <a href="#reklam-en">Advertising</a>
+        <a href="#ai-en">AI review</a>
+        <a href="#silme-en">Deletion &amp; rights</a>
+        <a href="#mezmun-en">Content &amp; copyright</a>
+        <a href="#elaqe-en">Contact</a>
+      </nav>
+
       <section>
-        <h2>1. Protection of Personal Data (GDPR &amp; AR Legislation)</h2>
-        <p>Registration is not required to use the app. When you want to enable notifications, save campaigns, or follow stores, you sign in with your email address using a one-time confirmation code (no password). Campaigns you save, stores you follow, and your notifications linked to your account are stored on secure servers and are never sold or shared with any third party. You can permanently delete your account and all your data from within the app at any time.</p>
+        <h2>Data controller</h2>
+        <p>The Dropy.az app and this website are operated by <strong>Omnigate MMC</strong> (Republic of Azerbaijan). For any privacy request: <a href="mailto:support@dropy.az">support@dropy.az</a>.</p>
+      </section>
+
+      <section id="melumat-en">
+        <h2>1. Data we collect</h2>
+        <p>No account is needed to browse. The data below is created only when you use the matching feature:</p>
+        <ul>
+          <li><strong>Account:</strong> your email address when you sign in (one-time code, no password), and optionally your name, city and profile photo.</li>
+          <li><strong>Your choices:</strong> campaigns you save, stores you follow, your notifications and notification settings (categories, quiet hours).</li>
+          <li><strong>Notifications:</strong> your device push token if you allow notifications (delivered through the Expo service).</li>
+          <li><strong>Reports and blocking:</strong> the reason and text of a report you send about a campaign. The list of stores you hide is kept only on your device.</li>
+          <li><strong>For sellers:</strong> store name, description, contact phone, website, logo, campaign photos and texts. You may optionally connect your Instagram or Facebook page (see section 7).</li>
+          <li><strong>Searches:</strong> search terms are stored without being linked to you (for example, to show popular searches).</li>
+          <li><strong>Technical data and ads:</strong> advertising identifier, approximate location (from IP address), in-app interactions and diagnostics — collected by Google AdMob to serve ads (section 5). Sentry may be used for crash reports.</li>
+        </ul>
+        <p>We do not sell your data.</p>
+      </section>
+
+      <section id="istifade-en">
+        <h2>2. How we use it</h2>
+        <p>To run your account and sign-in, show what you saved and follow, send relevant notifications, review and publish seller listings, prevent abuse, improve the app, and show ads.</p>
+      </section>
+
+      <section id="terefler-en">
+        <h2>3. Service providers</h2>
+        <p>We use these providers to process data:</p>
+        <ul>
+          <li><strong>Supabase</strong> — accounts, database and file storage (images).</li>
+          <li><strong>Expo</strong> — push notification delivery.</li>
+          <li><strong>Google AdMob</strong> — ads (section 5).</li>
+          <li><strong>Anthropic</strong> — automated review of images and text you upload (section 6).</li>
+          <li><strong>Sentry</strong> — crash and error reports (when enabled).</li>
+          <li><strong>Meta (Instagram / Facebook)</strong> — only when a seller connects their account (section 7).</li>
+        </ul>
+      </section>
+
+      <section id="yer-en">
+        <h2>4. Location permission</h2>
+        <p>Location permission is optional and used only while the app is open. Your precise coordinates are used <strong>on your device</strong> only, to sort campaigns by distance; they are never sent to or stored on our servers. Location is not tracked in the background. The ad provider (AdMob) may infer an approximate location from your IP address (section 5).</p>
+      </section>
+
+      <section id="reklam-en">
+        <h2>5. Advertising</h2>
+        <p>Ads are served through Google AdMob. AdMob may use the advertising identifier, approximate location, in-app interactions and diagnostics to serve and personalize ads and to prevent fraud. See the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+        <p>On iOS we ask for your separate permission to track; if you decline, the advertising identifier is not used. On Android you can reset your advertising ID or turn off personalization in device settings (Google → Ads). Sponsored content is marked with an "Ad / Sponsor" badge.</p>
+      </section>
+
+      <section id="ai-en">
+        <h2>6. AI review of uploads</h2>
+        <p>To keep seller and profile content free of inappropriate material (nudity, violence, hate and similar), the <strong>images</strong> (profile photo, store logo, campaign photo) and <strong>text</strong> (store and campaign names and descriptions) you upload are sent to <strong>Anthropic</strong>'s AI service before publishing and processed only for that review. The app asks for your consent the first time; if you decline, nothing is sent and the upload does not go ahead. Anthropic's policy: <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a>. Seller listings that pass are also approved manually.</p>
       </section>
 
       <section>
-        <h2>2. Location Permission</h2>
-        <p>Your location coordinates are read only once, at the moment you actively request it, to show you the nearest campaigns — it is not tracked while the app is closed or in the background, and it is never stored on our servers.</p>
+        <h2>7. Instagram and Facebook connection (sellers)</h2>
+        <p>A seller may connect their store's Instagram or Facebook page through Meta's official login flow. The page identifier and an access token are then stored on the server and used to read the store's campaign posts and create listing drafts from them. This is not a way to sign in to Dropy.az. The connection is deleted when the store is deleted, and you can also revoke the app's access at any time in your Meta account settings.</p>
       </section>
 
-      <section>
-        <h2>3. Ads and Partnership Links</h2>
-        <p>In-app sponsored ads are clearly marked with an "Ad / Sponsor" badge, and external partner links with a "Partner" label. Ads are served through Google AdMob; AdMob may use the device advertising identifier to personalize ads (see the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>).</p>
+      <section id="silme-en">
+        <h2>8. Deletion and your rights</h2>
+        <p>You can delete your account immediately and permanently in the app: <strong>Profile → Delete account</strong>. This deletes your account, profile, saved items, follows, notifications, push token and reports you sent; for sellers also the store, its listings, uploaded photos and the Instagram/Facebook connection. If you cannot access the app, email <a href="mailto:support@dropy.az">support@dropy.az</a> from the account's email address. Details: <a href="/hesabi-sil/">account deletion page</a>.</p>
+        <p>Under applicable law you have the right to access, correct and delete your data and to object to its processing. We reply to requests within 30 days at most.</p>
+        <p>The app is not intended for children under 13 and we do not knowingly collect their data.</p>
       </section>
 
-      <section>
-        <h2>4. Contact &amp; Legal Information</h2>
-        <p>For any questions, corrections, or partnership requests: <a href="mailto:support@dropy.az">support@dropy.az</a></p>
+      <section id="mezmun-en">
+        <h2>9. Content, copyright and terms of use</h2>
+        <p>Store names, logos and product images in campaigns belong to the respective stores and brands and are used only to show that campaign; every campaign links to its original source. Dropy.az is not an official partner of these brands. Prices and terms can change, so check with the store before buying.</p>
+        <p>If you are a rights holder and want content removed, write to <a href="mailto:support@dropy.az">support@dropy.az</a> naming the campaign and your rights; well-founded requests are reviewed promptly.</p>
+        <p>Users can report an inappropriate listing with the flag button on the campaign page and hide all listings from a store. We reserve the right to remove listings and accounts that break the rules.</p>
+      </section>
+
+      <section id="elaqe-en">
+        <h2>10. Contact and changes</h2>
+        <p>Questions, corrections and requests: <a href="mailto:support@dropy.az">support@dropy.az</a>. This policy may be updated; significant changes are announced in the app and on this page with the date above.</p>
       </section>
     </div>
 
-    <footer>© 2026 Dropy.az</footer>
+    <footer>© 2026 Dropy.az · Omnigate MMC · <a href="/hesabi-sil/">Hesabı sil / Delete account</a></footer>
   </div>
-
-  <script>
-    function setLang(lang) {
-      document.querySelectorAll("[data-lang-content]").forEach(function (el) {
-        el.hidden = el.getAttribute("data-lang-content") !== lang;
-      });
-      document.querySelectorAll(".lang-toggle button").forEach(function (btn) {
-        btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
-      });
-      try { localStorage.setItem("dropy-legal-lang", lang); } catch (e) {}
-    }
-    (function () {
-      try {
-        var saved = localStorage.getItem("dropy-legal-lang");
-        if (saved === "en") setLang("en");
-      } catch (e) {}
-    })();
-  </script>
+  <script src="/legal.js"></script>
 </body>
 </html>
